@@ -22,7 +22,12 @@ docker logs d9e39d338955
 ```
 - Go to the URL http://192.168.1.101:8080
 - Create user and password: jenkins/s3cret
-## Create Credentials
+## Create Pipeline
+- New Item/fuzzy-pipeline/Multibranch Pipeline/OK/Save
+## Create Folder Credential
+- Dashboard/fuzzy-pipeline/Credentials
+- Stores scoped to fuzzy-pipeline/(global)/Add Credentials
+- Fill username, password, ID and click at OK
 # Dockerize
 - Clone the repository
 ```sh
