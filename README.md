@@ -31,13 +31,6 @@ docker logs d9e39d338955
   - Select the new Folder Credential
 - Behaviors/Add/Filter by name (with regular expression)
 - Save
-# Create Folder Credential
-- Dashboard/fuzzy-pipeline/Credentials
-- Stores scoped to fuzzy-pipeline/(global)/Add Credentials
-- Fill username, password, ID and click at OK
-# Config Pipeline
-- Dashboard/fuzzy-pipeline/Configure
-- Behaviors/Add/Filter by name (with regular expression)
 # Dockerize
 - Clone the repository
 ```sh
