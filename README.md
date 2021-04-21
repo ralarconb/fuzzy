@@ -31,6 +31,16 @@ docker logs d9e39d338955
   - Select the new Folder Credential
 - Behaviors/Add/Filter by name (with regular expression)
 - Save
+# Config Discovering of Branches
+- Dashboard/fuzzy-pipeline/Configure/Behaviors/Discover branches
+  - Filter by name (with regular expression)
+```sh
+^dev|master|features|main.*$
+```
+- Save
+- Dashboard/fuzzy-pipeline
+  - Scan Multibranch Pipeline Now
+  - Scan Multibranch Pipeline Log
 # Dockerize
 - Clone the repository
 ```sh
