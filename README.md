@@ -22,6 +22,7 @@ docker logs d9e39d338955
 ```
 - Go to the URL http://192.168.1.101:8080
 - Create user and password: jenkins/s3cret
+## Create Credentials
 # Dockerize
 - Clone the repository
 ```sh
