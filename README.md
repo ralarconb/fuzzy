@@ -6,6 +6,11 @@
 npm init
 npm install express nodemon
 ```
+- Open a terminal and start the application
+```sh
+npm start
+```
+- Go to the URL http://localhost:3000/
 # Dockerize
 - Clone the repository
 ```sh
