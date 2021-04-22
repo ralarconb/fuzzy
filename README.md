@@ -33,6 +33,8 @@ docker logs d9e39d338955
 ```sh
 ^dev|master|features|main.*$
 ```
+- Scan Multibranch Pipeline Triggers
+  - Check **Periodically if not otherwise run**
 - Save
 - Dashboard/fuzzy-pipeline
   - Scan Multibranch Pipeline Now
