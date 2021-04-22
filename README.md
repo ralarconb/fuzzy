@@ -23,17 +23,13 @@ docker logs d9e39d338955
 - Go to the URL http://192.168.1.101:8080
 - Create user and password: jenkins/s3cret
 # Create Pipeline
-- New Item/fuzzy-pipeline/Multibranch Pipeline/OK/Save
+- New Item/fuzzy-pipeline/Multibranch Pipeline/OK
 - Branch Sources/Add source/Git/Project Repository
   - https://github.com/ralarconb/fuzzy.git
 - Credentials/Add/fuzzy-pipeline
   - Fill username, password, ID and click at OK/Add
   - Select the new Folder Credential
 - Behaviors/Add/Filter by name (with regular expression)
-- Save
-# Config Discovering of Branches
-- Dashboard/fuzzy-pipeline/Configure/Behaviors/Discover branches
-  - Filter by name (with regular expression)
 ```sh
 ^dev|master|features|main.*$
 ```
