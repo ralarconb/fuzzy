@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    stagest {
+    stages {
         stage("build") {
             steps {
                 echo "building the application..."

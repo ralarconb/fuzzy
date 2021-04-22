@@ -37,7 +37,10 @@ docker logs d9e39d338955
 - Dashboard/fuzzy-pipeline
   - Scan Multibranch Pipeline Now
   - Scan Multibranch Pipeline Log
-- Create Jenkinsfile
+- Create Jenkinsfile and push to main branch
+  - Scan Multibranch Pipeline Now
+  - Scan Multibranch Pipeline Log
+- Dashboard/fuzzy-pipeline/main
 # Dockerize
 - Clone the repository
 ```sh
