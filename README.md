@@ -42,7 +42,6 @@ docker logs d9e39d338955
   - Scan Multibranch Pipeline Now
   - Scan Multibranch Pipeline Log
 - Dashboard/fuzzy-pipeline/main
-# Config Trigger Build Automatically
 # Dockerize
 - Clone the repository
 ```sh
