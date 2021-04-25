@@ -44,11 +44,23 @@ docker logs d9e39d338955
   - Scan Multibranch Pipeline Now
   - Scan Multibranch Pipeline Log
 - Dashboard/fuzzy-pipeline/main
-# Config Build Tools in Jenkins
-- Maven
-- Gradle
+# Config Java Build Tools in Jenkins
+- Dashboard/Manage Jenkins/Global Tool Configuration
+  - Gradle/Add Gradle/fill the name/Check **Install Automatically**
+  - Maven/Add Maven/fill the name/Check **Install Automatically**
+  - Save
+# Config Nodejs Build Tools in Jenkins
 - Npm
 - Yarn
+- Dashboard/Manage Jenkins/Manage Plugins/Available/Check Nodejs
+  - Install without restart
+  - Restart after plugin has been installed
+- Dashboard/Manage Jenkins/Global Tool Configuration
+  - Nodejs/Add Nodejs/fill the name/Check **Install Automatically**
+  - Global npm packages to install
+    - yarn 
+  - Save
+- https://youtu.be/L9Ite-1pEU8?t=415
 # Dockerize
 - Clone the repository
 ```sh
