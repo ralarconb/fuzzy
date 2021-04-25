@@ -49,7 +49,6 @@ docker logs d9e39d338955
 - Gradle
 - Npm
 - Yarn
-- https://youtu.be/L9Ite-1pEU8?t=134
 # Dockerize
 - Clone the repository
 ```sh
