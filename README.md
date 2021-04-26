@@ -46,7 +46,7 @@ docker logs d9e39d338955
 - Dashboard/fuzzy-pipeline/main
 # Config Java Build Tools in Jenkins
 - Dashboard/Manage Jenkins/Global Tool Configuration
-  - Gradle/Add Gradle/fill the name/Check **Install Automatically**
+  - Gradle/Add Gradle/Gradle-7.0/Check **Install Automatically**
   - Maven/Add Maven/fill the name/Check **Install Automatically**
   - Save
 # Config Nodejs Build Tools in Jenkins
@@ -56,11 +56,12 @@ docker logs d9e39d338955
   - Install without restart
   - Restart after plugin has been installed
 - Dashboard/Manage Jenkins/Global Tool Configuration
-  - Nodejs/Add Nodejs/fill the name/Check **Install Automatically**
+  - Nodejs/Add Nodejs/NodeJS-16.0.0/Check **Install Automatically**
   - Global npm packages to install
     - yarn 
   - Save
 - https://youtu.be/L9Ite-1pEU8?t=415
+- Config Jenkinsfile
 # Dockerize
 - Clone the repository
 ```sh
