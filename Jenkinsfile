@@ -1,6 +1,21 @@
 pipeline {
     agent any
     stages {
+        stage("build") {
+            steps {
+                echo "building the application..."
+            }
+        }
+        stage("test") {
+            steps {
+                echo "testing the application..."
+            }
+        }
+        stage("deploy") {
+            steps {
+                echo "deploying the application..."
+            }
+        }
         stage("run frontend") {
             steps {
                 echo "executing yarn..."
@@ -15,21 +30,6 @@ pipeline {
                 withGradle() {
                     sh './gradlew -v'
                 }
-            }
-        }
-        stage("build") {
-            steps {
-                echo "building the application..."
-            }
-        }
-        stage("test") {
-            steps {
-                echo "testing the application..."
-            }
-        }
-        stage("deploy") {
-            steps {
-                echo "deploying the application..."
             }
         }
     }
