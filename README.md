@@ -60,7 +60,6 @@ docker logs d9e39d338955
   - Global npm packages to install
     - yarn 
   - Save
-- https://youtu.be/L9Ite-1pEU8?t=415
 - Config Jenkinsfile
 # Dockerize
 - Clone the repository
