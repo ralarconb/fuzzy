@@ -11,17 +11,6 @@ npm install express nodemon
 npm start
 ```
 - Go to the URL http://localhost:3000/
-# Jenkins Setup
-- Pull jenkins
-- Run jenkins
-- Get the password from the logs file
-```sh
-docker pull jenkins/jenkins
-docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenkins/jenkins
-docker logs d9e39d338955
-```
-- Go to the URL http://192.168.1.101:8080
-- Create user and password: jenkins/s3cret
 # Create Pipeline
 - New Item/fuzzy-pipeline/Multibranch Pipeline/OK
 - Branch Sources/Add source/Git/Project Repository
@@ -61,6 +50,8 @@ docker logs d9e39d338955
     - yarn 
   - Save
 - Config Jenkinsfile
+# List Env Variables
+- http://192.168.1.101:8080/env-vars.html/
 # Dockerize
 - Clone the repository
 ```sh
