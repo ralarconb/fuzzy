@@ -36,21 +36,19 @@ docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenk
 - Config a trigger to pull from time to time on the repository: Scan Multibranch Pipeline Triggers
   - Check **Periodically if not otherwise run**
 - Save the configuration of the new pipeline
+# Config Nodejs Plugin
+- Install Npm plugin going to: Dashboard/Manage Jenkins/Manage Plugins/Available/Check Nodejs
+  - Install without restart
+  - Restart after plugin has been installed
+# Install Nodejs and Yarn
+- Install Nodejs and Yarn: Dashboard/Manage Jenkins/Global Tool Configuration
+  - Nodejs/Add Nodejs/NodeJS-16.0.0/Check **Install Automatically**
+  - Global npm packages to install
+    - yarn 
+  - Save
 # Run the Jenkinsfile
 - Trigger the Jenkinsfile execution: Dashboard/fuzzy-pipeline
   - Scan Multibranch Pipeline Now
   - Scan Multibranch Pipeline Log
 - And look at the console output: Dashboard/fuzzy-pipeline/main/Build Now/
   - Clic on the build number and **Console Output**
-# Config Nodejs Build Tools in Jenkins
-- Npm
-- Yarn
-- Dashboard/Manage Jenkins/Manage Plugins/Available/Check Nodejs
-  - Install without restart
-  - Restart after plugin has been installed
-- Dashboard/Manage Jenkins/Global Tool Configuration
-  - Nodejs/Add Nodejs/NodeJS-16.0.0/Check **Install Automatically**
-  - Global npm packages to install
-    - yarn 
-  - Save
-- Config Jenkinsfile
