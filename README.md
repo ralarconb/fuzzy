@@ -1,14 +1,14 @@
 # Nodejs Setup
-- Init the project
-- Install extensions
-- Add start script to package.json
-```sh
-npm init
-npm install express nodemon
-```
+- This project shows a Nodejs app with a Jenkins pipeline
+- First, clone the repository
+- Next, install extensions
 - Open a terminal and start the application
+- And test the application with curl
 ```sh
+git clone https://github.com/ralarconb/fuzzy.git
+npm install express nodemon
 npm start
+curl http://localhost:3000/
 ```
 - Go to the URL http://localhost:3000/
 # Create Pipeline
