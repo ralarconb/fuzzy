@@ -36,19 +36,12 @@ docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenk
 - Config a trigger to pull from time to time on the repository: Scan Multibranch Pipeline Triggers
   - Check **Periodically if not otherwise run**
 - Save the configuration of the new pipeline
-- Optionally scan and look at the log file: Dashboard/fuzzy-pipeline
+# Run the Jenkinsfile
+- Trigger the Jenkinsfile execution: Dashboard/fuzzy-pipeline
   - Scan Multibranch Pipeline Now
   - Scan Multibranch Pipeline Log
-# Create Jenkinsfile
-- Create Jenkinsfile and push to main branch
-  - Scan Multibranch Pipeline Now
-  - Scan Multibranch Pipeline Log
-- Dashboard/fuzzy-pipeline/main
-# Config Java Build Tools in Jenkins
-- Dashboard/Manage Jenkins/Global Tool Configuration
-  - Gradle/Add Gradle/Gradle-7.0/Check **Install Automatically**
-  - Maven/Add Maven/fill the name/Check **Install Automatically**
-  - Save
+- And look at the console output: Dashboard/fuzzy-pipeline/main/Build Now/
+  - Clic on the build number and **Console Output**
 # Config Nodejs Build Tools in Jenkins
 - Npm
 - Yarn
