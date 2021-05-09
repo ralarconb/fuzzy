@@ -20,6 +20,10 @@ curl http://localhost:3000/
 ```
 - Optionally go to the URL http://localhost:3000/
 # Create Pipeline
+- Start Jenkins
+```sh
+docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenkins/jenkins
+```
 - New Item/fuzzy-pipeline/Multibranch Pipeline/OK
 - Branch Sources/Add source/Git/Project Repository
   - https://github.com/ralarconb/fuzzy.git
