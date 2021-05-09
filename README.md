@@ -25,13 +25,11 @@ curl http://localhost:3000/
 docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenkins/jenkins
 ```
 - Open Jenkins at the URL: http://192.168.1.101:8080/
-- New Item/fuzzy-pipeline/Multibranch Pipeline/OK
-- Branch Sources/Add source/Git/Project Repository
+- Create a multibranch pipeline: New Item/fuzzy-pipeline/Multibranch Pipeline/OK
+- Add the git URL: Branch Sources/Add source/Git/Project Repository
   - https://github.com/ralarconb/fuzzy.git
-- Credentials/Add/fuzzy-pipeline
-  - Fill username, password, ID and click at OK/Add
-  - Select the new Folder Credential
-- Behaviors/Add/Filter by name (with regular expression)
+- Don't fill the credentials section, this is a public repository
+- Add a regular expression to filter the needed branches: Behaviors/Add/Filter by name (with regular expression)
 ```sh
 ^dev|master|features|main.*$
 ```
