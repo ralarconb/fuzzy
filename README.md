@@ -7,11 +7,13 @@ npm init
 # Nodejs Local Setup
 - This project shows a Nodejs app with a Jenkins pipeline
 - First, clone the repository
+- Go into the project directory
 - Next, install extensions
 - Open a terminal and start the application
 - And test the application with curl
 ```sh
 git clone https://github.com/ralarconb/fuzzy.git
+cd fuzzy
 npm install express nodemon
 npm start
 curl http://localhost:3000/
