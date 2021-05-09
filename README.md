@@ -33,10 +33,10 @@ docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenk
 ```sh
 ^dev|master|features|main.*$
 ```
-- Scan Multibranch Pipeline Triggers
+- Config a trigger to pull from time to time on the repository: Scan Multibranch Pipeline Triggers
   - Check **Periodically if not otherwise run**
-- Save
-- Dashboard/fuzzy-pipeline
+- Save the configuration of the new pipeline
+- Optionally scan and look at the log file: Dashboard/fuzzy-pipeline
   - Scan Multibranch Pipeline Now
   - Scan Multibranch Pipeline Log
 # Create Jenkinsfile
