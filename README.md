@@ -1,4 +1,10 @@
-# Nodejs Setup
+# Nodejs Project Config
+- Init the application
+```sh
+npm init
+```
+- Add the start script to package.json
+# Nodejs Local Setup
 - This project shows a Nodejs app with a Jenkins pipeline
 - First, clone the repository
 - Next, install extensions
@@ -10,7 +16,7 @@ npm install express nodemon
 npm start
 curl http://localhost:3000/
 ```
-- Go to the URL http://localhost:3000/
+- Optionally go to the URL http://localhost:3000/
 # Create Pipeline
 - New Item/fuzzy-pipeline/Multibranch Pipeline/OK
 - Branch Sources/Add source/Git/Project Repository
